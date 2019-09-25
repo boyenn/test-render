@@ -1,0 +1,5 @@
+<svg>
+  <ng-container *ngFor="let color of colors; index as i">
+    <circle [attr.cx]="20+i*40" cy="20" r="20" [attr.fill]="color" (click)="setColor(color)"></circle>
+  </ng-container>
+</svg>
